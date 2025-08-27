@@ -24,7 +24,7 @@ export default function Hero() {
 
             <div className="space-y-4">
               <p className="text-xl lg:text-2xl font-medium text-balance text-pretty">
-                "Building useful things with electrons & code."
+                &ldquo;Building useful things with electrons &amp; code.&rdquo;
               </p>
               <p className="text-[#6B6B6B] text-base lg:text-lg text-pretty">
                 Embedded systems, FPGAs, and web tools that actually ship.

@@ -2,7 +2,7 @@ import Section from "./Section"
 
 export default function Contact() {
   const contactInfo = [
-    { label: "Phone", value: "416-510-3376", href: "tel:416-510-3376" },
+    
     { label: "Email", value: "aayan.s.rahman@gmail.com", href: "mailto:aayan.s.rahman@gmail.com" },
     { label: "LinkedIn", value: "linkedin.com/in/aayanrahman", href: "https://www.linkedin.com/in/aayan-rahman/" },
     { label: "GitHub", value: "github.com/aayanrahman", href: "https://github.com/aayanrahman" },

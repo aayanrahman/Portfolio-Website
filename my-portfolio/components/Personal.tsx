@@ -21,17 +21,17 @@ const interests: Interest[] = [
 
 const shows: Show[] = [
   // Watched
-  { title: "Your Name.", kind: "Anime", status: "Watched", rating: 5 },
-  { title: "A Silent Voice", kind: "Anime", status: "Watched", rating: 5 },
-  { title: "Attack on Titan", kind: "Anime", status: "Watched", rating: 5 },
-  { title: "Haikyuu!!", kind: "Anime", status: "Watched", rating: 4 },
-  { title: "Start-Up", kind: "K-Drama", status: "Watched", rating: 4 },
-  { title: "Reply 1988", kind: "K-Drama", status: "Watched", rating: 5 },
+  { title: "When Life Gives you Tangerines", kind: "K-Drama", status: "Watched", rating: 5 },
+  { title: "Death Note", kind: "Anime", status: "Watched", rating: 5 },
+  { title: "Demon Slayer", kind: "Anime", status: "Watched", rating: 4 },
+  { title: "A Sign of Affection", kind: "Anime", status: "Watched", rating: 5 },
+  { title: "Business Proposal", kind: "K-Drama", status: "Watched", rating: 4 },
+  { title: "Twenty Five Twenty One", kind: "K-Drama", status: "Watched", rating: 4 },
 
   // Planning
-  { title: "Cowboy Bebop", kind: "Anime", status: "Planning" },
-  { title: "Monster", kind: "Anime", status: "Planning" },
-  { title: "My Mister", kind: "K-Drama", status: "Planning" },
+  { title: "Hunter x Hunter", kind: "Anime", status: "Planning" },
+  { title: "Horimiya", kind: "Anime", status: "Planning" },
+  { title: "Summer Strike", kind: "K-Drama", status: "Planning" },
 ];
 
 function RatingDots({ value = 0 }: { value?: number }) {
@@ -130,12 +130,12 @@ export default function Personal() {
           Photo spots <small lang="ja" className="ml-2 text-neutral-500">撮影メモ</small>
         </h3>
         <ul className="mt-3 grid gap-2 sm:grid-cols-2 text-sm text-neutral-700 dark:text-neutral-300">
-          <li>MUJI Ginza, Tokyo — calm concrete + wood</li>
-          <li>Daikanyama T-Site — book stacks & soft light</li>
-          <li>Kyoto back alleys — muted signage, stone</li>
-          <li>Kamakura beach — foggy mornings, film look</li>
-          <li>Toronto: <span className="text-neutral-600">STACKT Market, AGO stairs, Union Station tiles</span></li>
-          <li>Waterloo: E7 glass bridges, DC library nooks</li>
+          <li>Waterloo — E7 glass bridges + minimalist labs</li>
+          <li>Waterloo — Dana Porter Library steps (brutalist concrete)</li>
+          <li>Toronto — AGO (Art Gallery of Ontario) curved wood + stairs</li>
+          <li>Cappadocia — sunrise hot air balloons</li>
+          <li>Istanbul — Hagia Sophia & side streets</li>
+          <li>Alberta — Banff mountain ranges + Lake Louise</li>
         </ul>
       </div>
 

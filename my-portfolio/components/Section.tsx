@@ -1,5 +1,5 @@
 import type React from "react"
-import Personal from "./Personal"
+
 interface SectionProps {
   id: string
   title: string
