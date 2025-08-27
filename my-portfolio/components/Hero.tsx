@@ -49,7 +49,7 @@ export default function Hero() {
               </Button>
               <Button
                 variant="outline"
-                onClick={() => window.open('/resume.pdf', '_blank')}
+                onClick={() => window.open('/Resume.pdf', '_blank')}
                 className="border-[#E6E4DF] text-[#1B1B1B] hover:bg-[#F5F4F1] px-6 py-3 rounded-lg font-medium link-hover min-h-[44px] focus:outline-none focus:ring-2 focus:ring-[#B8E6B8] focus:ring-offset-2"
                 aria-label="View my resume"
               >

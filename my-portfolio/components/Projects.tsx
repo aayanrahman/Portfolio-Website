@@ -28,7 +28,7 @@ export default function Projects() {
         "Designed 12V SLA battery system with 100A ANL fuse sizing based on surge current & safety margins.",
         "Simulated PWM control, fuse heating, and voltage drops in LTspice; optimized drivetrain ratio for 40 km/h target speed.",
       ],
-      demoUrl: "https://github.com/aayan-rahman/electrathon-design",
+      demoUrl: "https://drive.google.com/drive/folders/1QTOu6MFC7aJCR5dkMZQu8-X7T1synJBI?usp=sharing",
     },
     {
       title: "UofT Hacks — ProteccAPI",

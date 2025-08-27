@@ -56,13 +56,13 @@ export default function AboutMePage() {
         src: "/hagia-sofia.jpg", 
         alt: "Hagia Sophia", 
         placeJA: "アヤソフィア（イスタンブール）", 
-        date: "2023-08-18" 
+        date: "2025-08-5" 
     },
     { 
         src: "/banff-lake.jpg", 
         alt: "Spirit Island", 
         placeJA: "スピリットアイランド（カナダ・アルバータ州）", 
-        date: "2022-07-03" 
+        date: "2023-07-03" 
     },
     ];
 
