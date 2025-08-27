@@ -28,7 +28,7 @@ export default function Projects() {
         "Designed 12V SLA battery system with 100A ANL fuse sizing based on surge current & safety margins.",
         "Simulated PWM control, fuse heating, and voltage drops in LTspice; optimized drivetrain ratio for 40 km/h target speed.",
       ],
-      githubUrl: "https://github.com/aayan-rahman/electrathon-design",
+      demoUrl: "https://github.com/aayan-rahman/electrathon-design",
     },
     {
       title: "UofT Hacks — ProteccAPI",
@@ -38,8 +38,8 @@ export default function Projects() {
         "Built a Git-integrated package scanner preventing secret/API key leaks pre-deployment.",
         "Integrated validation directly into developer workflows.",
       ],
-      demoUrl: "https://proteccapi.vercel.app",
-      githubUrl: "https://github.com/aayan-rahman/proteccapi",
+      demoUrl: "https://www.npmjs.com/package/proteccapi",
+      githubUrl: "https://github.com/aayanrahman/proteccapi",
     },
     {
       title: "Hack The North — Indoor Nav & Heatmap",
@@ -49,8 +49,8 @@ export default function Projects() {
         "Indoor navigation + activity heatmap for event productivity tracking.",
         "Live user data fused with floorplan visualizations (DeckGL + custom UI).",
       ],
-      demoUrl: "https://indoor-nav-htn.vercel.app",
-      githubUrl: "https://github.com/aayan-rahman/indoor-nav-heatmap",
+      demoUrl: "https://devpost.com/software/cooked-or-cooking",
+      githubUrl: "https://github.com/ultratrikx/cooked-or-cooking",
     },
     {
       title: "Raspberry Pi Athan Player",
@@ -60,18 +60,19 @@ export default function Projects() {
         "Plays Athan MP3 automatically at prayer times; runs fully offline.",
         "Built-in Ramadan 2025 timetable (editable), autostarts via systemd, logs events to /home/pi/athan/athan_log.txt.",
       ],
-      githubUrl: "https://github.com/aayan-rahman/raspberry-pi-athan",
+      githubUrl: "https://github.com/aayanrahman/Raspberry-Pi-Athan-Player",
     },
     {
-      title: 'Gambling Potions Mod — "Skibidi Brainrot"',
+      title: '"Skibidi Brainrot" Minecraft Mod',
       period: "Personal Project",
       tags: ["Minecraft 1.21", "Fabric"],
       description: [
         "Low Taper Fade Helmet (growth effect), Skibidi Potion (random buffs/debuffs), Ohio Mode (2x speed).",
         "Fanum Tax (inventory drain), Balkan Rage Potion (Strength III, Speed II, Blindness).",
+        "1000+ Downloads on Modrinth (Minecraft mod repository).",
       ],
-      demoUrl: "https://modrinth.com/mod/gambling-potions",
-      githubUrl: "https://github.com/aayan-rahman/gambling-potions-mod",
+      demoUrl: "https://modrinth.com/mod/skibidi-brainrot-mod",
+      githubUrl: "https://github.com/aayanrahman/brainrot-minecraft-mod-1.21",
     },
     {
       title: "MindFlow — AI Therapy App",
@@ -81,8 +82,8 @@ export default function Projects() {
         "AI-powered empathetic chat + journaling, guided exercises (CBT/mindfulness), local prototype.",
         "Emphasis on privacy and simple UI; HMR dev experience via Vite.",
       ],
-      demoUrl: "https://mindflow-therapy.vercel.app",
-      githubUrl: "https://github.com/aayan-rahman/mindflow-ai",
+      demoUrl: "https://mymindflow.co/",
+      githubUrl: "https://github.com/aayanrahman/MyMindFlow",
     },
   ]
 
