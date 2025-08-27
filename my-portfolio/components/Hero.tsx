@@ -17,7 +17,7 @@ export default function Hero() {
                 University of Waterloo — Electrical Engineering (Co-op)
               </div>
               <h1 className="font-serif text-4xl lg:text-5xl font-bold tracking-tight text-balance">
-                Aayan Rahman <span aria-hidden="true">☆⋆｡𖦹°‧★ᯓ★</span>
+                Aayan Rahman <span aria-hidden="true">☆⋆｡𖦹°‧ᯓ★</span>
               </h1>
               <div className="w-16 h-px bg-[#BEE3D2] mt-4"></div>
             </div>
@@ -46,6 +46,14 @@ export default function Hero() {
                 aria-label="Go to contact section"
               >
                 Contact
+              </Button>
+              <Button
+                variant="outline"
+                onClick={() => window.open('/resume.pdf', '_blank')}
+                className="border-[#E6E4DF] text-[#1B1B1B] hover:bg-[#F5F4F1] px-6 py-3 rounded-lg font-medium link-hover min-h-[44px] focus:outline-none focus:ring-2 focus:ring-[#B8E6B8] focus:ring-offset-2"
+                aria-label="View my resume"
+              >
+                Resume
               </Button>
             </div>
           </div>

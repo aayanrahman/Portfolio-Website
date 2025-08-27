@@ -6,6 +6,7 @@ import Projects from "@/components/Projects"
 import Experience from "@/components/Experience"
 import Skills from "@/components/Skills"
 import Contact from "@/components/Contact"
+import Personal from "@/components/Personal"
 import Footer from "@/components/Footer"
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
       <Projects />
       <Experience />
       <Skills />
+      <Personal /> {/* Added the Personal component here */}
       <Contact />
       <Footer />
     </main>
