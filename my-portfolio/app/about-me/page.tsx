@@ -154,7 +154,7 @@ export default function AboutMePage() {
 
             <div className="px-4 py-3">
                 <p className="text-xs text-neutral-500">
-                Quiet, mellow, and a little dreamy — for late studio sessions.
+                Quiet, mellow, and a little dreamy — for late study sessions.
                 </p>
             </div>
             </div>
