@@ -7,7 +7,8 @@ export default function Skills() {
       category: "Hardware",
       skills: [
         "Circuit Design",
-        "LTspice",
+        "PCB Design",
+        "LTspice Simulation",
         "Multimeter Use",
         "Soldering",
         "Power Systems",
@@ -17,19 +18,45 @@ export default function Skills() {
     },
     {
       category: "Software",
-      skills: ["JavaScript", "Python", "C", "Bash", "SQL"],
+      skills: [
+        "JavaScript",
+        "Python",
+        "C++",
+        "Bash",
+        "Lua",
+      ],
     },
     {
       category: "Tools",
-      skills: ["LTspice", "Onshape", "Git", "VS Code", "Visual Studio", "Notion", "Figma"],
+      skills: [
+        "Onshape",
+        "Git & GitHub",
+        "VS Code",
+        "Visual Studio",
+        "Notion",
+        "KiCad",
+        "Figma",
+        "Firebase",
+        "Supabase",
+      ],
     },
     {
       category: "Frameworks",
-      skills: ["React.js", "Node.js", "Unity (C#)", "Express.js"],
+      skills: [
+        "React.js",
+        "Next.js",
+        "Node.js",
+        "Unity (C#)",
+      ],
     },
     {
       category: "Other",
-      skills: ["Microsoft Office", "Project Coordination", "CAD Standards", "Technical Writing"],
+      skills: [
+        "Project Coordination",
+        "CAD Standards",
+        "Technical Writing",
+        "Microsoft Office",
+      ],
     },
   ]
 
