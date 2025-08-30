@@ -64,6 +64,7 @@ export default function Projects() {
         "Deployed via Vercel CLI with a custom Namecheap domain configured through Vercel DNS, automatically secured with HTTPS",
         "Demonstrates a seamless connection between a physical NFC medium and a cloud-hosted digital portfolio."
       ],
+      githubUrl: "https://github.com/aayanrahman/Portfolio-Website",
       images: [
         { src: "/projects/nfc/Card.png", alt: "NFC card front", cap: "Front (matte stock)" },
         { src: "/projects/nfc/card-scan.jpg", alt: "Phone scan", cap: "Tap → portfolio" },
