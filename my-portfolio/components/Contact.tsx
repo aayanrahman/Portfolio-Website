@@ -7,7 +7,6 @@ export default function Contact() {
     { label: "LinkedIn", value: "linkedin.com/in/aayanrahman", href: "https://www.linkedin.com/in/aayan-rahman/" },
     { label: "GitHub", value: "github.com/aayanrahman", href: "https://github.com/aayanrahman" },
     { label: "Twitter/X", value: "x.com/aayanr07", href: "https://x.com/aayanr07" },
-
   ]
 
   return (

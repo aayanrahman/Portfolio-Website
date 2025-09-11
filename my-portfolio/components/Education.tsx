@@ -16,14 +16,7 @@ export default function Education() {
             </div>
             <div>
               <p className="font-medium">BASc, Electrical Engineering (Co-op)</p>
-              <p className="text-sm text-[#6B6B6B] italic">Power Systems Focus</p>
               <p className="text-sm text-[#6B6B6B]">Sept 2025 — Apr 2030</p>
-            </div>
-            <div className="pt-2">
-              <p className="text-sm text-[#6B6B6B]">
-                <span className="font-medium">1A Coursework:</span> Classical Mechanics (ECE 105), Programming (ECE
-                150), Engineering Practice (ECE 190), Project Studio (ECE 198)
-              </p>
             </div>
           </div>
         </Card>
