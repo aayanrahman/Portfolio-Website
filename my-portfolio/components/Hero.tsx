@@ -42,15 +42,15 @@ export default function Hero() {
               <Button
                 variant="outline"
                 onClick={() => scrollToSection("contact")}
-                className="border-[#E6E4DF] text-[#1B1B1B] hover:bg-[#F5F4F1] px-6 py-3 rounded-lg font-medium link-hover min-h-[44px] focus:outline-none focus:ring-2 focus:ring-[#B8E6B8] focus:ring-offset-2"
+                className="border-[#E6E4DF] text-[#1B1B1B] hover:bg-[#F5F4F1] px-6 py-3 rounded-lg font-medium min-h-[44px] focus:outline-none focus:ring-2 focus:ring-[#B8E6B8] focus:ring-offset-2"
                 aria-label="Go to contact section"
               >
                 Contact
               </Button>
               <Button
                 variant="outline"
-                onClick={() => window.open('/Resume.pdf', '_blank')}
-                className="border-[#E6E4DF] text-[#1B1B1B] hover:bg-[#F5F4F1] px-6 py-3 rounded-lg font-medium link-hover min-h-[44px] focus:outline-none focus:ring-2 focus:ring-[#B8E6B8] focus:ring-offset-2"
+                onClick={() => window.open('/Engineering_Resume.pdf', '_blank')}
+                className="border-[#E6E4DF] text-[#1B1B1B] hover:bg-[#F5F4F1] px-6 py-3 rounded-lg font-medium min-h-[44px] focus:outline-none focus:ring-2 focus:ring-[#B8E6B8] focus:ring-offset-2"
                 aria-label="View my resume"
               >
                 Resume

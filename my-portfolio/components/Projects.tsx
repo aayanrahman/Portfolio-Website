@@ -24,8 +24,7 @@ interface Project {
   images?: ProjectImage[];
 }
 
-// mention winning the award and assigning with manufacturing some of the parts like the roll bar etc
-// NFC business card mention how you used the bom and shipped it to jlcpcb to manufacture
+// Consider adding some more in the future
 
 export default function Projects() {
   const projects: Project[] = [
