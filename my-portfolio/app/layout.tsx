@@ -21,6 +21,9 @@ export const metadata: Metadata = {
     "University of Waterloo Electrical Engineering (Co-op) student building useful things with electrons & code.",
   keywords: ["Electrical Engineering", "University of Waterloo", "Embedded Systems", "FPGA", "PCB Design"],
   authors: [{ name: "Aayan Rahman" }],
+  icons: {
+    icon: '/favicon.svg',
+  },
   openGraph: {
     title: "Aayan Rahman - Electrical Engineering Student",
     description: "Building useful things with electrons & code.",
@@ -38,11 +41,11 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en" className={`${inter.variable} ${plusJakarta.variable} antialiased`}>
       <body className="bg-[#FCFCFA] text-[#1B1B1B] font-sans">{children}</body>
     </html>
-  )
+  );
 }
