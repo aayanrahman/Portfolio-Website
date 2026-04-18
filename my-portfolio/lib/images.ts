@@ -21,11 +21,11 @@ export const experienceImages = {
 
 export const projectImages = {
   rocketry: {
-    schematic: "/images/projects/rocketry/egse-schematic.jpg",
+    schematic: "/images/projects/rocketry/egse_2.png",
     layout:    "/images/projects/rocketry/egse-layout.jpg",
   },
   formulaElectric: {
-    layout:    "/images/projects/formula-electric/boost-layout.jpg",
+    layout:    "/images/projects/formula-electric/boost_2.png",
     schematic: "/images/projects/formula-electric/boost-schematic.jpg",
   },
   electrathon: {

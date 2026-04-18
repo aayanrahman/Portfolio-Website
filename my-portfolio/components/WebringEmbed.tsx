@@ -7,10 +7,7 @@ export default function WebringEmbed() {
 
   useEffect(() => {
     const host = hostRef.current;
-    if (!host) return;
-
-    // Clear anything (important for Fast Refresh / route transitions)
-    host.innerHTML = "";
+    if (!host || host.querySelector('script[data-webring]')) return;
 
     const s = document.createElement("script");
     s.src = "https://uwaterloo.network/embed.js";
@@ -21,7 +18,7 @@ export default function WebringEmbed() {
     host.appendChild(s);
 
     return () => {
-      host.innerHTML = "";
+      try { host.removeChild(s); } catch {}
     };
   }, []);
 

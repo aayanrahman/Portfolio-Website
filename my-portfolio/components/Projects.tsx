@@ -93,12 +93,7 @@ export default function Projects() {
           src: projectImages.rocketry.schematic,
           alt: "KiCad schematic showing dual converter redesign for EGSE",
           cap: "EGSE power supply redesign — KiCad schematic",
-        },
-        {
-          src: projectImages.rocketry.layout,
-          alt: "PCB layout for EGSE redesign",
-          cap: "Updated PCB layout",
-        },
+        }
       ],
     },
     {
@@ -122,12 +117,7 @@ export default function Projects() {
           src: projectImages.formulaElectric.layout,
           alt: "Altium 365 two-layer boost converter PCB layout",
           cap: "Boost converter layout — Altium 365",
-        },
-        {
-          src: projectImages.formulaElectric.schematic,
-          alt: "Boost converter schematic with TPS43061 and protection circuitry",
-          cap: "Schematic with protection circuitry",
-        },
+        }
       ],
     },
     {
