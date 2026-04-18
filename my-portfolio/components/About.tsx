@@ -5,11 +5,12 @@ export default function About() {
     <Section id="about" title="About" accent="mint">
       <div className="max-w-3xl">
         <p className="text-lg leading-relaxed text-[#6B6B6B]">
-          I&apos;m a first-year Electrical Engineering student at the University of Waterloo, passionate about building
-          systems that bridge the digital and physical worlds. My interests span high-speed digital design, embedded
-          systems, RF/FPGA development, and PCB design using tools like KiCad and LTspice. When I&apos;m not debugging
-          circuits or writing code, you&apos;ll find me working on projects that solve real problems—from race car electrical
-          systems to AI-powered applications.
+          I&apos;m an Electrical Engineering student at the University of Waterloo. I just finished my first co-op at
+          Gravity RV — wrote BLE firmware in C for an ESP32, built a React Native app for wireless motor control,
+          and got hands-on with soldering, wiring harnesses, and plasma cutting on the bench.
+          Outside of co-op I&apos;m doing hardware project work: PCB design in Altium and KiCad for Waterloo Formula
+          Electric and Rocketry, and anything else where software meets something physical. The stuff that can
+          actually break in satisfying ways.
         </p>
       </div>
     </Section>

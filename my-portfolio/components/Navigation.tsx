@@ -27,7 +27,7 @@ export default function Navigation() {
         <div className="font-serif font-semibold text-lg tracking-tight">Aayan Rahman</div>
 
         <div className="hidden md:flex items-center space-x-8">
-          {["About", "Education", "Projects", "Experience", "Skills", "Contact"].map((item) => (
+          {["About", "Education", "Experience", "Projects", "Skills", "Contact"].map((item) => (
             <button
               key={item}
               onClick={() => scrollToSection(item.toLowerCase())}

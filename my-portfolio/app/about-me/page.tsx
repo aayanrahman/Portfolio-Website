@@ -291,7 +291,7 @@ export default function AboutMePage() {
             {/* rows */}
             <dl className="divide-y divide-[#E6E4DF]">
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 px-4 py-3">
-                <dt className="text-xs text-neutral-500">Laptop</dt>
+                <dt className="text-xs text-neutral-500">Laptops</dt>
                 <dd className="sm:col-span-2 text-sm">
                 ThinkPad T14s Gen 4 — i7 / 32 GB
                 </dd>

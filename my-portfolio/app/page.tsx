@@ -16,8 +16,8 @@ export default function Home() {
       <Hero />
       <About />
       <Education />
-      <Projects />
       <Experience />
+      <Projects />
       <Skills />
       <Personal /> {/* Added the Personal component here */}
       <Contact />

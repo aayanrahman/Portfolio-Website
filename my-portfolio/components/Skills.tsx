@@ -4,22 +4,47 @@ import Tag from "./Tag"
 export default function Skills() {
   const skillCategories = [
     {
-      category: "Hardware",
+      category: "Hardware & Electrical",
       skills: [
         "Circuit Design",
         "PCB Design",
+        "Altium Designer",
+        "KiCad",
+        "EasyEDA",
         "LTspice Simulation",
-        "Multimeter Use",
-        "Soldering",
         "Power Systems",
         "Battery Management",
         "Digital Logic",
+        "Oscilloscope / Bench Testing",
+        "Multimeter Use",
+      ],
+    },
+    {
+      category: "Embedded & Firmware",
+      skills: [
+        "Embedded C",
+        "ESP32",
+        "BLE / Bluetooth",
+        "GATT Characteristics",
+        "Signal Tracing",
+        "Reflashing",
+      ],
+    },
+    {
+      category: "Fabrication",
+      skills: [
+        "High-current Soldering",
+        "Wiring Harness",
+        "Plasma Cutting",
+        "Welding",
+        "JLCPCB Manufacturing",
       ],
     },
     {
       category: "Software",
       skills: [
         "JavaScript",
+        "TypeScript",
         "Python",
         "C++",
         "Bash",
@@ -27,22 +52,9 @@ export default function Skills() {
       ],
     },
     {
-      category: "Tools",
+      category: "Frameworks & Mobile",
       skills: [
-        "Onshape",
-        "Git & GitHub",
-        "VS Code",
-        "Visual Studio",
-        "Notion",
-        "KiCad",
-        "Figma",
-        "Firebase",
-        "Supabase",
-      ],
-    },
-    {
-      category: "Frameworks",
-      skills: [
+        "React Native",
         "React.js",
         "Next.js",
         "Node.js",
@@ -50,12 +62,24 @@ export default function Skills() {
       ],
     },
     {
+      category: "Tools & Platforms",
+      skills: [
+        "Firebase",
+        "Zoho",
+        "Supabase",
+        "Git & GitHub",
+        "Onshape",
+        "VS Code",
+        "Notion",
+        "Figma",
+      ],
+    },
+    {
       category: "Other",
       skills: [
         "Project Coordination",
-        "CAD Standards",
         "Technical Writing",
-        "Microsoft Office",
+        "CAD Standards",
       ],
     },
   ]
