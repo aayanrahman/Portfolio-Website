@@ -12,7 +12,7 @@ type Artifact = {
   domainVariant: "mint" | "blush" | "blue"
   description: string
   stack: string[]
-  imageSrc: string
+  imageSrc?: string
   imageAlt: string
   video?: string
 }
@@ -25,7 +25,6 @@ const artifacts: Artifact[] = [
     description:
       "Shipped a cross-platform iOS and Android app that drives motor hardware wirelessly over BLE. Owned the entire comms layer: characteristic discovery, command framing, live status telemetry, and graceful error recovery.",
     stack: ["React Native", "BLE", "TypeScript"],
-    imageSrc: experienceImages.gravity.bleApp,
     imageAlt: "React Native BLE app UI showing motor control interface",
     video: "/videos/ble.mp4",
   },
@@ -66,7 +65,6 @@ const artifacts: Artifact[] = [
     description:
       "Picked up plasma cutting on the floor and ran the machine myself to fabricate structural brackets and custom metal parts for active prototype builds.",
     stack: ["Plasma Cutter", "Metal Fabrication"],
-    imageSrc: experienceImages.gravity.plasma,
     imageAlt: "Plasma cutting metal stock during prototype fabrication at Gravity RV",
     video: "/videos/plasma-cutting.mp4",
   },

@@ -9,11 +9,9 @@
 
 export const experienceImages = {
   gravity: {
-    bleApp:      "/images/experience/gravity/ble-app.jpg",
     esp32:       "/images/experience/gravity/esp32-firmware.JPG",
     motorDebug:  "/images/experience/gravity/motor-debug.jpg",
     soldering:   "/images/experience/gravity/soldering.jpg",
-    plasma:      "/images/experience/gravity/plasma-cutting.jpg",
     cad:         "/images/experience/gravity/cad.jpg",
     zoho:        "/images/experience/gravity/zoho-firebase.jpg",
   },
