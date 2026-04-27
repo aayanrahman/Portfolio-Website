@@ -59,10 +59,10 @@ export default function Hero() {
           </div>
 
           <div className="flex justify-center lg:justify-end">
-            <div className="w-full max-w-md aspect-[4/3] bg-[#F5F4F1] border border-[#E6E4DF] rounded-lg overflow-hidden">
+            <div className="w-full max-w-md aspect-[4/3] bg-[#0a1a0a] border border-[#E6E4DF] rounded-lg overflow-hidden">
               <img
-                src="/pcb-circuit-board-with-electronic-components-and-t.png"
-                alt="PCB circuit board design showcasing electronic components and circuit traces"
+                src="/pcb.jpeg"
+                alt="PCB circuit board with electronic components and circuit traces"
                 className="w-full h-full object-cover"
                 loading="eager"
               />
