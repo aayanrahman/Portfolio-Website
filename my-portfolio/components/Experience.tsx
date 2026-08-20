@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react"
 import Section from "./Section"
 import Timeline from "./Timeline"
 import Tag from "./Tag"
-import { experienceImages } from "@/lib/images"
+import { experienceImages, stickers, videos } from "@/lib/images"
 
 type Artifact = {
   title: string
@@ -26,7 +26,7 @@ const artifacts: Artifact[] = [
       "Shipped a cross-platform iOS and Android app that drives motor hardware wirelessly over BLE. Owned the entire comms layer: characteristic discovery, command framing, live status telemetry, and graceful error recovery.",
     stack: ["React Native", "BLE", "TypeScript"],
     imageAlt: "React Native BLE app UI showing motor control interface",
-    video: "/videos/ble.mp4",
+    video: videos.ble,
   },
   {
     title: "ESP32 BLE Firmware",
@@ -66,7 +66,7 @@ const artifacts: Artifact[] = [
       "Picked up plasma cutting on the floor and ran the machine myself to fabricate structural brackets and custom metal parts for active prototype builds.",
     stack: ["Plasma Cutter", "Metal Fabrication"],
     imageAlt: "Plasma cutting metal stock during prototype fabrication at Gravity RV",
-    video: "/videos/plasma-cutting.mp4",
+    video: videos.plasmaCutting,
   },
   {
   title: "CAD Work",
@@ -166,7 +166,7 @@ export default function Experience() {
               aria-label="Gravity RV — R&D co-op work"
               className="absolute inset-0 w-full h-full object-cover"
             >
-              <source src="/videos/gravity.mp4" type="video/mp4" />
+              <source src={videos.gravity} type="video/mp4" />
             </video>
           </div>
           <div className="p-6 md:p-8">
@@ -252,7 +252,7 @@ export default function Experience() {
           <div className="hidden lg:flex items-center justify-center">
             <img
               ref={matchaRef}
-              src="/stickers/star.png"
+              src={stickers.star}
               alt=""
               aria-hidden="true"
               className="h-92 w-auto object-contain drop-shadow-md transition-transform duration-75"

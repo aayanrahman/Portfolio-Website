@@ -1,5 +1,6 @@
 import Section from "./Section"
 import Card from "./Card"
+import { asset } from "@/lib/asset"
 
 export default function Education() {
   return (
@@ -18,7 +19,7 @@ export default function Education() {
               </div>
             </div>
             <div className="hidden md:flex flex-shrink-0 w-20 self-stretch items-center justify-center rounded-xl bg-[#F5F4F1] mr-1 p-2">
-              <img src="/waterloo-logo.png" alt="University of Waterloo" className="w-full h-full object-contain" />
+              <img src={asset("/waterloo-logo.png")} alt="University of Waterloo" className="w-full h-full object-contain" />
             </div>
           </div>
         </Card>
@@ -36,7 +37,7 @@ export default function Education() {
               </div>
             </div>
             <div className="hidden md:flex flex-shrink-0 w-20 self-stretch items-center justify-center rounded-xl bg-[#F5F4F1] mr-1 p-2">
-              <img src="/ib-logo.png" alt="International Baccalaureate" className="w-full h-full object-contain" />
+              <img src={asset("/ib-logo.png")} alt="International Baccalaureate" className="w-full h-full object-contain" />
             </div>
           </div>
         </Card>

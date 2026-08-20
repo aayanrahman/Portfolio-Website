@@ -1,6 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
+import { asset } from "@/lib/asset"
 
 export default function Hero() {
   const scrollToSection = (id: string) => {
@@ -49,7 +50,7 @@ export default function Hero() {
               </Button>
               <Button
                 variant="outline"
-                onClick={() => window.open('/Engineering_Resume.pdf', '_blank')}
+                onClick={() => window.open(asset('/Engineering_Resume.pdf'), '_blank')}
                 className="border-[#E6E4DF] text-[#1B1B1B] hover:bg-[#F5F4F1] px-6 py-3 rounded-lg font-medium min-h-[44px] focus:outline-none focus:ring-2 focus:ring-[#B8E6B8] focus:ring-offset-2"
                 aria-label="View my resume"
               >
@@ -61,7 +62,7 @@ export default function Hero() {
           <div className="flex justify-center lg:justify-end">
             <div className="w-full max-w-md aspect-[4/3] bg-[#0a1a0a] border border-[#E6E4DF] rounded-lg overflow-hidden">
               <img
-                src="/pcb.jpeg"
+                src={asset("/pcb.jpeg")}
                 alt="PCB circuit board with electronic components and circuit traces"
                 className="w-full h-full object-cover"
                 loading="eager"

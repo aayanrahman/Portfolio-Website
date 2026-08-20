@@ -2,6 +2,8 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import { asset } from "@/lib/asset";
+import { stickers } from "@/lib/images";
 
 import LH44 from "@/public/photos/LH44.jpg";
 import mclaren from "@/public/photos/mclaren.jpg";
@@ -47,9 +49,9 @@ function PolaroidCard({ src, alt, placeJA, date }: Polaroid) {
 
 export default function AboutMePage() {
   const polaroids: Polaroid[] = [
-    { src: "/cappadocia-balloon.jpg", alt: "Cappadocia balloons at sunrise", placeJA: "カッパドキア（トルコ）", date: "2025-08-10" },
-    { src: "/hagia-sofia.jpg", alt: "Hagia Sophia", placeJA: "アヤソフィア（イスタンブール）", date: "2025-08-05" },
-    { src: "/banff-lake.jpg", alt: "Spirit Island", placeJA: "スピリットアイランド（カナダ）", date: "2023-07-03" },
+    { src: asset("/cappadocia-balloon.jpg"), alt: "Cappadocia balloons at sunrise", placeJA: "カッパドキア（トルコ）", date: "2025-08-10" },
+    { src: asset("/hagia-sofia.jpg"), alt: "Hagia Sophia", placeJA: "アヤソフィア（イスタンブール）", date: "2025-08-05" },
+    { src: asset("/banff-lake.jpg"), alt: "Spirit Island", placeJA: "スピリットアイランド（カナダ）", date: "2023-07-03" },
   ];
 
   const foods = ["Coffee", "Matcha latte", "Butter chicken", "Pasta", "Biryani", "Sushi", "Ramen", "Garlic butter noodles"];
@@ -217,8 +219,8 @@ export default function AboutMePage() {
                 </ul>
               </Card>
               <div className="flex items-end justify-center gap-4 py-1">
-                <img src="/stickers/matcha.png" alt="" aria-hidden className="h-28 w-auto object-contain drop-shadow-sm" />
-                <img src="/stickers/redbull.png" alt="" aria-hidden className="h-24 w-auto object-contain drop-shadow-sm" />
+                <img src={stickers.matcha} alt="" aria-hidden className="h-28 w-auto object-contain drop-shadow-sm" />
+                <img src={stickers.redbull} alt="" aria-hidden className="h-24 w-auto object-contain drop-shadow-sm" />
               </div>
             </div>
           </section>

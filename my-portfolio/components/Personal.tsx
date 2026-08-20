@@ -3,6 +3,8 @@
 import React from "react";
 import Image from "next/image";
 import Section from "./Section";
+import Link from "next/link";
+import { asset } from "@/lib/asset";
 
 type Interest = { name: string; link?: string };
 type Show = {
@@ -94,9 +96,9 @@ export default function Personal() {
       {/* Matcha mini-gallery (hairline frames + captions) */}
       <div className="mt-6 grid gap-3 sm:grid-cols-3">
         {[
-          { src: "/matcha-1.jpg", alt: "抹茶ラテ — matcha latte", cap: "Matcha latte, soft morning" },
-          { src: "/matcha-2.jpg", alt: "抹茶 — quiet morning", cap: "Cappadocia balloons, early light" },
-          { src: "/matcha-3.jpg", alt: "抹茶 — workspace", cap: "Laptop, minimal setup" },
+          { src: asset("/matcha-1.jpg"), alt: "抹茶ラテ — matcha latte", cap: "Matcha latte, soft morning" },
+          { src: asset("/matcha-2.jpg"), alt: "抹茶 — quiet morning", cap: "Cappadocia balloons, early light" },
+          { src: asset("/matcha-3.jpg"), alt: "抹茶 — workspace", cap: "Laptop, minimal setup" },
         ].map((img) => (
           <figure
             key={img.src}
@@ -170,9 +172,9 @@ export default function Personal() {
 
       {/* More page */}
       <div className="mt-6">
-        <a href="/about-me" className="text-sm font-medium hover:underline">
+        <Link href="/about-me" className="text-sm font-medium hover:underline">
           More about me →
-        </a>
+        </Link>
       </div>
     </Section>
   );

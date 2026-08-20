@@ -2,6 +2,7 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Inter, Plus_Jakarta_Sans } from "next/font/google"
 import "./globals.css"
+import { asset } from "@/lib/asset"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -22,7 +23,7 @@ export const metadata: Metadata = {
   keywords: ["Electrical Engineering", "University of Waterloo", "Embedded Systems", "FPGA", "PCB Design"],
   authors: [{ name: "Aayan Rahman" }],
   icons: {
-    icon: '/favicon.svg',
+    icon: asset('/favicon.svg'),
   },
   openGraph: {
     title: "Aayan Rahman - Electrical Engineering Student",

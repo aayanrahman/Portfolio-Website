@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react"
 import Section from "./Section"
+import { stickers } from "@/lib/images"
 
 export default function About() {
   const canRef = useRef<HTMLImageElement>(null)
@@ -38,7 +39,7 @@ export default function About() {
         <div className="hidden lg:flex shrink-0 items-end justify-center">
           <img
             ref={canRef}
-            src="/stickers/redbull.png"
+            src={stickers.redbull}
             alt=""
             aria-hidden="true"
             className="h-52 w-auto object-contain drop-shadow-md transition-transform duration-75"
