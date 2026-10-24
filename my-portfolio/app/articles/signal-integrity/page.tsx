@@ -56,20 +56,16 @@ export default function SignalIntegrityPage() {
           ))}
         </ol>
 
-        <div className="rounded-xl border border-[#E6E4DF] bg-white flex items-center gap-3 px-4 py-3">
+        <a
+          href={PDF}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="rounded-xl border border-[#E6E4DF] bg-white flex items-center gap-3 px-4 py-3 hover:bg-[#F9F8F6] transition-colors"
+        >
           <span className="text-[10px] font-medium px-2 py-0.5 rounded-full bg-[#F6DDE2]/60 text-[#5E1B2E] shrink-0">PDF</span>
-          <a href={PDF} target="_blank" rel="noopener noreferrer" className="flex-1 text-sm text-neutral-800 font-medium hover:text-neutral-600 transition-colors">
-            Notes On Signal Integrity And Design
-          </a>
-          <a
-            href={PDF}
-            download
-            className="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-lg border border-[#E6E4DF] hover:bg-[#F5F4F1] text-xs transition-colors shrink-0"
-          >
-            <span aria-hidden>↓</span>
-            <span>Download</span>
-          </a>
-        </div>
+          <span className="flex-1 text-sm text-neutral-800 font-medium">Notes On Signal Integrity And Design</span>
+          <span className="text-xs text-neutral-400 shrink-0">Open ↗</span>
+        </a>
 
         <hr className="border-[#E6E4DF]" />
 
