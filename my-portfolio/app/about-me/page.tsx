@@ -80,6 +80,13 @@ export default function AboutMePage() {
       tag: "Productivity",
       summary: "A spatial and digital system for high-output learning as an EE student — matching environment to cognitive load, digital hygiene, and the anti-group-study manifesto.",
       href: "/articles/waterloo-study-spots",
+    },
+    {
+      title: "Signal and Power Integrity",
+      date: "Oct 2026",
+      tag: "PCB Design",
+      summary: "This will be my first post related to technical electrical engineering stuff.",
+      href: "/articles/signal-integrity",
     }
   ];
 
