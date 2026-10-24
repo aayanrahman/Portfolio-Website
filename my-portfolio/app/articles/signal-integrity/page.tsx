@@ -1,6 +1,9 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { BASE, Markdown, getIndex, getNotes } from "@/lib/notes";
+import { asset } from "@/lib/asset";
+
+const PDF = asset("/notes/notes-on-signal-integrity-and-design.pdf");
 
 export const metadata: Metadata = {
   title: "Signal and Power Integrity — Aayan Rahman",
@@ -52,6 +55,21 @@ export default function SignalIntegrityPage() {
             </li>
           ))}
         </ol>
+
+        <div className="rounded-xl border border-[#E6E4DF] bg-white flex items-center gap-3 px-4 py-3">
+          <span className="text-[10px] font-medium px-2 py-0.5 rounded-full bg-[#F6DDE2]/60 text-[#5E1B2E] shrink-0">PDF</span>
+          <a href={PDF} target="_blank" rel="noopener noreferrer" className="flex-1 text-sm text-neutral-800 font-medium hover:text-neutral-600 transition-colors">
+            Notes On Signal Integrity And Design
+          </a>
+          <a
+            href={PDF}
+            download
+            className="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-lg border border-[#E6E4DF] hover:bg-[#F5F4F1] text-xs transition-colors shrink-0"
+          >
+            <span aria-hidden>↓</span>
+            <span>Download</span>
+          </a>
+        </div>
 
         <hr className="border-[#E6E4DF]" />
 
