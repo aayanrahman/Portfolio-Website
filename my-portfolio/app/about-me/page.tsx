@@ -87,6 +87,13 @@ export default function AboutMePage() {
       tag: "PCB Design",
       summary: "This will be my first post related to technical electrical engineering stuff.",
       href: "/articles/signal-integrity",
+    },
+    {
+      title: "C++ Notes",
+      date: "Oct 2026",
+      tag: "C++",
+      summary: "When I first learned pointers as a first-year in Waterloo ECE, I was freaking out.",
+      href: "/articles/cpp-notes",
     }
   ];
 
@@ -95,6 +102,7 @@ export default function AboutMePage() {
     "PCB Design": "bg-[#D9E8F6]/60 text-[#1B3A5E]",
     Manufacturing: "bg-[#F6DDE2]/60 text-[#5E1B2E]",
     Productivity: "bg-[#F6F0DE]/80 text-[#5E4A1B]",
+    "C++": "bg-[#BEE3D2]/40 text-[#1B5E40]",
   };
 
   return (

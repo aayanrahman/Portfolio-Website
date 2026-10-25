@@ -1,16 +1,17 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { BASE, Markdown, getIndex, getNotes } from "@/lib/notes";
+import { SIGNAL_INTEGRITY, Markdown, getIndex, getNotes } from "@/lib/notes";
 import { asset } from "@/lib/asset";
 
 const PDF = asset("/notes/notes-on-signal-integrity-and-design.pdf");
+const BASE = SIGNAL_INTEGRITY.base;
 
 export const metadata: Metadata = {
   title: "Signal and Power Integrity — Aayan Rahman",
 };
 
 export default function SignalIntegrityPage() {
-  const notes = getNotes();
+  const notes = getNotes(SIGNAL_INTEGRITY);
 
   return (
     <main className="mx-auto max-w-2xl px-4 py-8">
@@ -40,7 +41,7 @@ export default function SignalIntegrityPage() {
 
         <hr className="border-[#E6E4DF]" />
 
-        <Markdown source={getIndex().replace(/^\s*\[\[[^\]]+\]\]\s*$/gm, "")} />
+        <Markdown source={getIndex(SIGNAL_INTEGRITY).replace(/^\s*\[\[[^\]]+\]\]\s*$/gm, "")} base={BASE} />
 
         <ol className="rounded-xl border border-[#E6E4DF] bg-white divide-y divide-[#E6E4DF] overflow-hidden">
           {notes.map((n, i) => (
