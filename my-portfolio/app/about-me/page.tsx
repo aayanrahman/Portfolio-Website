@@ -94,6 +94,13 @@ export default function AboutMePage() {
       tag: "C++",
       summary: "When I first learned pointers as a first-year in Waterloo ECE, I was freaking out.",
       href: "/articles/cpp-notes",
+    },
+    {
+      title: "Electronics Notes",
+      date: "Oct 2026",
+      tag: "Electronics",
+      summary: "Where do I even start with impedance?",
+      href: "/articles/electronics",
     }
   ];
 
@@ -103,6 +110,7 @@ export default function AboutMePage() {
     Manufacturing: "bg-[#F6DDE2]/60 text-[#5E1B2E]",
     Productivity: "bg-[#F6F0DE]/80 text-[#5E4A1B]",
     "C++": "bg-[#BEE3D2]/40 text-[#1B5E40]",
+    Electronics: "bg-[#D9E8F6]/60 text-[#1B3A5E]",
   };
 
   return (

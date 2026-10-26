@@ -2,6 +2,8 @@ import fs from "fs";
 import path from "path";
 import Link from "next/link";
 import type { ReactNode } from "react";
+import katex from "katex";
+import "katex/dist/katex.min.css";
 
 /**
  * Obsidian notes copied verbatim into content/<collection>/.
@@ -23,6 +25,12 @@ export const CPP_NOTES: Collection = {
   dir: "cpp-notes",
   base: "/articles/cpp-notes",
   order: ["Pointers"],
+};
+
+export const ELECTRONICS: Collection = {
+  dir: "electronics",
+  base: "/articles/electronics",
+  order: ["Impedance"],
 };
 
 export type Note = { name: string; slug: string; body: string };
@@ -106,6 +114,20 @@ export function Markdown({ source, base }: { source: string; base: string }) {
           {label && <figcaption className="px-4 pt-2 text-[10px] font-mono text-neutral-400">{label}</figcaption>}
           <pre className="px-4 py-3 text-xs leading-relaxed text-neutral-800 overflow-x-auto"><code>{code.join("\n")}</code></pre>
         </figure>
+      );
+      continue;
+    }
+
+    if (line.trim() === "$$") {
+      flush();
+      const tex: string[] = [];
+      while (++n < lines.length && lines[n].trim() !== "$$") tex.push(lines[n]);
+      out.push(
+        <div
+          key={out.length}
+          className="overflow-x-auto text-neutral-800"
+          dangerouslySetInnerHTML={{ __html: katex.renderToString(tex.join("\n"), { displayMode: true, throwOnError: false }) }}
+        />
       );
       continue;
     }

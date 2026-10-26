@@ -1,0 +1,71 @@
+import Link from "next/link";
+import type { Metadata } from "next";
+import { ELECTRONICS, getNotes } from "@/lib/notes";
+
+const BASE = ELECTRONICS.base;
+
+export const metadata: Metadata = {
+  title: "Electronics Notes — Aayan Rahman",
+};
+
+export default function ElectronicsNotesPage() {
+  const notes = getNotes(ELECTRONICS);
+
+  return (
+    <main className="mx-auto max-w-2xl px-4 py-8">
+      <div className="mb-8">
+        <Link
+          href="/about-me"
+          className="inline-flex items-center gap-2 py-1.5 px-3 rounded-lg border border-[#E6E4DF] hover:bg-[#F5F4F1] text-sm transition-colors"
+        >
+          <span aria-hidden>←</span>
+          <span>Back</span>
+          <span lang="ja" className="text-neutral-400 ml-1 text-xs">戻る</span>
+        </Link>
+      </div>
+
+      <article className="space-y-8">
+        <header className="space-y-3">
+          <div className="flex items-center gap-2">
+            <span className="text-[10px] font-medium px-2 py-0.5 rounded-full bg-[#D9E8F6]/60 text-[#1B3A5E]">
+              Electronics
+            </span>
+            <span className="text-[10px] text-neutral-400">Oct 2026</span>
+          </div>
+          <h1 className="font-serif text-3xl font-bold tracking-tight leading-tight">
+            Electronics Notes
+          </h1>
+        </header>
+
+        <hr className="border-[#E6E4DF]" />
+
+        <ol className="rounded-xl border border-[#E6E4DF] bg-white divide-y divide-[#E6E4DF] overflow-hidden">
+          {notes.map((n, i) => (
+            <li key={n.slug}>
+              <Link href={`${BASE}/${n.slug}`} className="flex items-center gap-3 px-4 py-3 hover:bg-[#F9F8F6] transition-colors">
+                <span className="text-[10px] text-neutral-300 w-4 shrink-0 text-right tabular-nums font-mono">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <span className="flex-1 text-sm text-neutral-800 font-medium">{n.name}</span>
+                <span aria-hidden className="text-xs text-neutral-400">→</span>
+              </Link>
+            </li>
+          ))}
+        </ol>
+
+        <hr className="border-[#E6E4DF]" />
+
+        <footer className="text-center">
+          <Link
+            href="/about-me"
+            className="inline-flex items-center gap-2 py-2 px-6 rounded-lg border border-[#E6E4DF] hover:bg-[#F5F4F1] transition-colors text-sm"
+          >
+            <span aria-hidden>←</span>
+            <span>Back to about</span>
+            <span lang="ja" className="text-neutral-400 ml-1 text-xs">戻る</span>
+          </Link>
+        </footer>
+      </article>
+    </main>
+  );
+}
