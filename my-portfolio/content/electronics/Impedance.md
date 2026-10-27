@@ -40,13 +40,13 @@ You don’t have to love calculus to read that sentence: **a capacitor needs cur
 
 With a sinusoidal voltage, the voltage changes fastest as it crosses zero. That’s when the capacitor’s current is largest. At the voltage peak, the voltage momentarily stops changing, so the current is zero.
 
-The current reaches its peak a quarter-cycle before the voltage does.
+The current reaches its peak a quarter cycle before the voltage does.
 
 That’s what people mean when they say **current leads voltage by 90° in an ideal capacitor.**
 
 An inductor has a different personality.
 
-It stores energy in a magnetic field and resists changes in current. An intuitive comparison is inertia: keeping something moving is one thing; changing how fast it moves takes effort.
+It stores energy in a magnetic field and resists changes in current. An intuitive comparison is inertia: keeping something moving is one thing, changing how fast it moves takes effort.
 
 For an inductor, voltage provides that effort:
 
@@ -86,9 +86,9 @@ The magnitude of impedance tells you the voltage to current amplitude ratio. Its
 
 And impedance depends on frequency.
 
-For the same voltage amplitude, a capacitor draws more current at higher frequencies: its voltage is changing faster. Its impedance magnitude decreases.
+For the same voltage amplitude, a capacitor draws more current at higher frequencies its voltage is changing faster. Its impedance magnitude decreases.
 
-An inductor requires more voltage to produce the same current amplitude at higher frequencies: its current must change faster. Its impedance magnitude increases.
+An inductor requires more voltage to produce the same current amplitude at higher frequencies its current must change faster. Its impedance magnitude increases.
 
 This is why asking for a circuit’s impedance without specifying frequency can leave half the question unanswered.
 

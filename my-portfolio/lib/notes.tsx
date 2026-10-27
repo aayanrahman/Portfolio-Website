@@ -1,9 +1,11 @@
 import fs from "fs";
 import path from "path";
 import Link from "next/link";
+import Script from "next/script";
 import type { ReactNode } from "react";
 import katex from "katex";
 import "katex/dist/katex.min.css";
+import { asset } from "@/lib/asset";
 
 /**
  * Obsidian notes copied verbatim into content/<collection>/.
@@ -12,6 +14,9 @@ import "katex/dist/katex.min.css";
  * the linked pages, or a fixed list of note names. Adding a new note is: copy
  * the .md file in, and link it from the index (or add it to `order`). Notes
  * not copied in yet are skipped.
+ *
+ * Pasted images (![[Pasted image ….png]]) are copied into public/notes/images/
+ * under their slugged name, and relative `files/…` links point at public/files/.
  */
 export type Collection = { dir: string; base: string; index?: string; order?: string[] };
 
@@ -31,6 +36,12 @@ export const ELECTRONICS: Collection = {
   dir: "electronics",
   base: "/articles/electronics",
   order: ["Impedance"],
+};
+
+export const STAR_NOTIFIER: Collection = {
+  dir: "board",
+  base: "/articles/star-notifier",
+  order: ["The star"],
 };
 
 export type Note = { name: string; slug: string; body: string };
@@ -57,8 +68,18 @@ export function getNotes(c: Collection): Note[] {
     .map((name) => ({ name, slug: toSlug(name), body: read(c, name) }));
 }
 
+const local = (url: string) => (url.startsWith("files/") ? asset(`/${url}`) : url);
+
+const image = (name: string) => {
+  const ext = path.extname(name);
+  return asset(`/notes/images/${toSlug(path.basename(name, ext))}${ext.toLowerCase()}`);
+};
+
+const LINK = /^\[([^\]]+)\]\(([^)]+)\)$/;
+const EMBED = /^!\[\[([^\]|]+)(?:\|[^\]]*)?\]\]$/;
+
 function inline(text: string, base: string): ReactNode[] {
-  const parts = text.split(/(`[^`]+`|\[\[[^\]]+\]\]|\*\*[^*]+\*\*|\*[^*]+\*|_[^_]+_)/g);
+  const parts = text.split(/(`[^`]+`|\[\[[^\]]+\]\]|\[[^\]]+\]\([^)]+\)|\*\*[^*]+\*\*|\*[^*]+\*|_[^_]+_)/g);
   return parts.map((part, i) => {
     if (part.startsWith("`") && part.length > 2) {
       return <code key={i} className="font-mono text-[0.85em] text-neutral-800 bg-[#F5F4F1] px-1 py-0.5 rounded">{part.slice(1, -1)}</code>;
@@ -69,6 +90,14 @@ function inline(text: string, base: string): ReactNode[] {
         <Link key={i} href={`${base}/${toSlug(target.trim())}`} className="underline underline-offset-2 hover:text-neutral-900">
           {(alias ?? target).trim()}
         </Link>
+      );
+    }
+    const link = part.match(LINK);
+    if (link) {
+      return (
+        <a key={i} href={local(link[2])} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-neutral-900">
+          {inline(link[1], base)}
+        </a>
       );
     }
     if (part.startsWith("**")) return <strong key={i} className="font-semibold text-neutral-800">{inline(part.slice(2, -2), base)}</strong>;
@@ -115,6 +144,35 @@ export function Markdown({ source, base }: { source: string; base: string }) {
           <pre className="px-4 py-3 text-xs leading-relaxed text-neutral-800 overflow-x-auto"><code>{code.join("\n")}</code></pre>
         </figure>
       );
+      continue;
+    }
+
+    // A link on its own line right above a pasted image is that image's caption.
+    const caption = line.match(LINK) && lines[n + 1]?.match(EMBED) ? line.match(LINK)![1] : null;
+    if (caption) n++;
+
+    const embed = lines[n].match(EMBED);
+    if (embed) {
+      flush();
+      out.push(
+        <figure key={out.length} className="space-y-2">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={image(embed[1].trim())} alt={caption ?? ""} className="w-full rounded-xl border border-[#E6E4DF]" />
+          {caption && <figcaption className="text-xs text-neutral-400 text-center">{caption}</figcaption>}
+        </figure>
+      );
+      continue;
+    }
+
+    const script = line.match(/^<script\b[^>]*\bsrc="([^"]+)"[^>]*>\s*<\/script>$/);
+    if (script) {
+      out.push(<Script key={out.length} src={script[1]} type="module" />);
+      continue;
+    }
+
+    if (line.startsWith("<")) {
+      flush();
+      out.push(<div key={out.length} dangerouslySetInnerHTML={{ __html: line.replace(/(src|href)="files\//g, `$1="${asset("/files/")}`) }} />);
       continue;
     }
 

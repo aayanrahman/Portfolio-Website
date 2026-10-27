@@ -101,6 +101,13 @@ export default function AboutMePage() {
       tag: "Electronics",
       summary: "Where do I even start with impedance?",
       href: "/articles/electronics",
+    },
+    {
+      title: "I Built a Star That Blinks When Claude Code Is Done ⭐",
+      date: "Oct 2026",
+      tag: "PCB Design",
+      summary: "You know when you give Claude Code a big task and then just sit there watching the terminal? Yeah, I got tired of that.",
+      href: "/articles/star-notifier",
     }
   ];
 
