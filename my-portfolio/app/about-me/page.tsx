@@ -108,6 +108,13 @@ export default function AboutMePage() {
       tag: "PCB Design",
       summary: "You know when you give Claude Code a big task and then just sit there watching the terminal? Yeah, I got tired of that.",
       href: "/articles/star-notifier",
+    },
+    {
+      title: "The Star Demo: How a Breadboard Knows When Claude Is Done 🔌",
+      date: "Oct 2026",
+      tag: "PCB Design",
+      summary: "The real star board isn't ordered yet. But I didn't want to wait weeks to see the idea actually work, so I grabbed an ESP32 dev board, a breadboard, and one LED.",
+      href: "/articles/star-notifier/how-the-demo-works",
     }
   ];
 

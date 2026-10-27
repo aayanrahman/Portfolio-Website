@@ -41,7 +41,7 @@ export const ELECTRONICS: Collection = {
 export const STAR_NOTIFIER: Collection = {
   dir: "board",
   base: "/articles/star-notifier",
-  order: ["The star"],
+  order: ["The star", "How the demo works"],
 };
 
 export type Note = { name: string; slug: string; body: string };
