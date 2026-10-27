@@ -1,6 +1,9 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { ELECTRONICS, getNotes } from "@/lib/notes";
+import { asset } from "@/lib/asset";
+
+const PDF = asset("/notes/rf-em-notes.pdf");
 
 const BASE = ELECTRONICS.base;
 
@@ -52,6 +55,17 @@ export default function ElectronicsNotesPage() {
             </li>
           ))}
         </ol>
+
+        <a
+          href={PDF}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="rounded-xl border border-[#E6E4DF] bg-white flex items-center gap-3 px-4 py-3 hover:bg-[#F9F8F6] transition-colors"
+        >
+          <span className="text-[10px] font-medium px-2 py-0.5 rounded-full bg-[#F6DDE2]/60 text-[#5E1B2E] shrink-0">PDF</span>
+          <span className="flex-1 text-sm text-neutral-800 font-medium">RF E&amp;M</span>
+          <span className="text-xs text-neutral-400 shrink-0">Open ↗</span>
+        </a>
 
         <hr className="border-[#E6E4DF]" />
 
