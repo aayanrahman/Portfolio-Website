@@ -103,7 +103,7 @@ export default function AboutMePage() {
       href: "/articles/electronics",
     },
     {
-      title: "I Built a Star That Blinks When Claude Code Is Done ⭐",
+      title: "I'm Building a Star That Blinks When Claude Code Is Done ⭐",
       date: "Oct 2026",
       tag: "PCB Design",
       summary: "You know when you give Claude Code a big task and then just sit there watching the terminal? Yeah, I got tired of that.",

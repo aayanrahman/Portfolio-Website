@@ -1,4 +1,4 @@
-# I Built a Star That Blinks When Claude Code Is Done ⭐
+# I'm Building a Star That Blinks When Claude Code Is Done ⭐
 
 You know when you give Claude Code a big task and then just sit there watching the terminal? Yeah, I got tired of that.
 
@@ -32,7 +32,7 @@ Honestly? It laid this out in a way I _never_ would have. Parts on both sides, t
 
 It's a mess. But it's also kind of art.
 
-And it mostly works! But I'd never want to hand-solder it or debug it. Getting something that connects is easy now. Knowing whether it's _good_ still takes understanding the fundamentals.
+And on paper it works! Every connection is routed and it passes KiCad's design rule check. But nothing's been built yet, and I'd never want to hand-solder it or debug it. Getting something that connects is easy now. Knowing whether it's _good_ still takes understanding the fundamentals.
 
 ## What Claude got right
 
@@ -52,7 +52,7 @@ More than I expected, actually:
 
 **The sneaky one: power.** 5 LEDs at full brightness plus the ESP's Wi-Fi can pull more than a USB port gives you. The fix is just turning the brightness down in code. It's a desk light, it doesn't need to be a flashlight.
 
-## Specs
+## Specs (the version I'm building)
 
 - **Size:** ~45 × 43 mm star
 - **Power:** USB-C, 5 V
