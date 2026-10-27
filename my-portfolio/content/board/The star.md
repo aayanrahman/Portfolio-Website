@@ -78,7 +78,7 @@ Everything's open source.
 
 <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer@3.5.0/dist/model-viewer.min.js"></script>
 
-<model-viewer src="files/star-notifier.glb" alt="3D model of the Star Notifier board" auto-rotate camera-controls shadow-intensity="1" style="width:100%;height:420px;background:#f7f6f2;border-radius:12px;"></model-viewer>
+<model-viewer src="files/star-notifier.glb" orientation="180deg 0deg 0deg" alt="3D model of the Star Notifier board" auto-rotate camera-controls shadow-intensity="1" style="width:100%;height:420px;background:#f7f6f2;border-radius:12px;"></model-viewer>
 
 _Drag it around!_
 
